@@ -3,405 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forma — Digital Identity Architecture</title>
+    <title>Forma — Digital Design & Metric Architecture</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-500 selection:text-white">
+<body class="bg-[#0b0f19] text-[#f1f5f9] font-sans antialiased selection:bg-blue-600 selection:text-white">
 
-    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-black tracking-tighter text-slate-950 flex items-center gap-2">
-                <span>FORMA</span>
-                <span class="text-[10px] tracking-widest uppercase bg-slate-100 font-bold px-2 py-0.5 rounded text-slate-500">Studio</span>
+    <nav class="bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2.5">
+                <span class="text-lg font-black tracking-tighter text-white">FORMA</span>
+                <span class="text-[9px] font-bold uppercase tracking-widest bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/20">Studio</span>
             </div>
-            <div class="flex space-x-6 items-center">
-                <a href="#signal" class="text-xs text-slate-600 hover:text-slate-950 font-medium tracking-tight transition">The Signal</a>
-                <a href="#services" class="text-xs text-slate-600 hover:text-slate-950 font-medium tracking-tight transition">Services & Rates</a>
-                <a href="#blueprint" class="text-xs text-slate-600 hover:text-slate-950 font-medium tracking-tight transition">The Blueprint</a>
-                <button onclick="toggleAdminPanel()" class="bg-slate-950 text-white px-3 py-1.5 rounded-lg text-xs font-semibold hover:bg-slate-800 transition shadow-sm">
-                    Toggle Admin Mode
-                </button>
+            <div class="flex space-x-8 items-center">
+                <a href="#showroom" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">The Grid</a>
+                <a href="#services" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">Services & Rates</a>
+                <a href="#blueprint" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">The Blueprint</a>
+                <a href="#services" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-500 transition shadow-md shadow-blue-600/10">
+                    Start Building
+                </a>
             </div>
         </div>
     </nav>
 
-    <header class="max-w-5xl mx-auto px-6 py-24 md:py-32">
-        <div class="max-w-3xl space-y-8">
-            <div class="inline-block bg-blue-50 border border-blue-100 text-blue-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-                A question worth sitting with
+    <header class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <div class="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700/60 text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse"></span> Intentional Craftsmanship vs Automation Overwhelm
             </div>
-            <h1 id="display-headline" class="text-4xl md:text-6xl font-black text-slate-950 tracking-tight leading-[0.95] md:leading-[0.95]">
-                ...
+            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight leading-[1.05] md:leading-[1.05]">
+                What does your business look like to someone who doesn't know you?
             </h1>
-            <p id="display-subheadline" class="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
-                ...
+            <p class="text-sm md:text-base text-slate-400 leading-relaxed max-w-2xl mx-auto font-normal">
+                The visual identity you project, or fail to project, speaks long before you do. A well-made logo is not vanity. A properly built website is not a luxury. These are the quiet signals that prove you are serious before you speak.
             </p>
-            <div class="pt-4 flex flex-wrap gap-4">
-                <a href="#services" class="bg-slate-950 text-white text-xs font-bold px-6 py-3.5 rounded-xl hover:bg-slate-800 transition shadow-sm">
-                    View Portfolio Matrix
+            <div class="pt-4 flex justify-center gap-4">
+                <a href="#services" class="bg-blue-600 text-white text-xs font-bold px-6 py-3.5 rounded-xl hover:bg-blue-500 transition shadow-lg shadow-blue-600/10">
+                    Explore Service offerings
                 </a>
-                <a href="#signal" class="bg-white text-slate-700 text-xs font-bold px-6 py-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 transition">
-                    Our Competitive Position
+                <a href="#showroom" class="bg-slate-800 text-slate-200 text-xs font-bold px-6 py-3.5 rounded-xl border border-slate-700 hover:bg-slate-700 transition">
+                    View Interactive Grid
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="signal" class="bg-white border-y border-slate-200/60 py-20">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-start">
+    <section id="showroom" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="bg-[#111827] rounded-3xl border border-slate-800 p-6 md:p-8 shadow-2xl">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-800 pb-6 mb-8 gap-4">
                 <div>
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600">Competitive Differentiation</span>
-                    <h2 class="text-3xl font-black tracking-tight text-slate-950 mt-2 mb-6">Closing the presentation gap.</h2>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Your classmates are already forming opinions. A client googles you before replying to your email. A recruiter checks your portfolio before reading your CV. 
-                    </p>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        The difference between a business that feels real and one that feels improvised is rarely about the product. It is almost always about presentation. That gap is smaller than you think, and easier to close.
-                    </p>
-                    <div class="border-l-4 border-slate-900 pl-4 py-1 my-4 bg-slate-50 rounded-r-lg">
-                        <p class="text-xs text-slate-700 font-medium italic">
-                            "AI tools generate content without taking into account a client's market or audience. AI-generated work leaves a distinctive visual signature that signals 'no deliberate investment'. We bring context, judgment, and intentional crafting."
+                    <h3 class="text-lg font-bold text-white tracking-tight">The Output Interface</h3>
+                    <p class="text-xs text-slate-400">Live components demonstrating structural clarity and optimized execution paradigms</p>
+                </div>
+                <div class="flex gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/40"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/40"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/40"></span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-[#172133] p-5 rounded-2xl border border-slate-700/50 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center text-[10px] uppercase font-bold tracking-widest text-slate-500 mb-3">
+                            <span>Visual Architecture</span>
+                            <span class="text-blue-400">Verified</span>
+                        </div>
+                        <h4 class="text-2xl font-black tracking-tighter text-white">FORMA™</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed mt-2">
+                            Curated typography pairs aligned perfectly with slate monochrome layouts to command immediate institutional authority.
                         </p>
+                    </div>
+                    <div class="grid grid-cols-4 gap-2 pt-2 border-t border-slate-800">
+                        <div class="h-6 bg-[#0b0f19] rounded border border-slate-800"></div>
+                        <div class="h-6 bg-[#1e293b] rounded"></div>
+                        <div class="h-6 bg-[#2563eb] rounded"></div>
+                        <div class="h-6 bg-[#f1f5f9] rounded"></div>
                     </div>
                 </div>
 
-                <div class="grid gap-4">
-                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                        <h3 class="font-bold text-sm text-slate-950 mb-1">Context & Judgment</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">We employ strategic intelligence at every production tier to ensure the deliverables align perfectly with your real target industry vertical landscape.</p>
+                <div class="bg-[#172133] p-5 rounded-2xl border border-slate-700/50 flex flex-col justify-between">
+                    <div class="flex justify-between items-center text-[10px] uppercase font-bold tracking-widest text-slate-500 mb-3">
+                        <span>Web Core Engineering</span>
+                        <span class="text-emerald-400">Production</span>
                     </div>
-                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                        <h3 class="font-bold text-sm text-slate-950 mb-1">Execution Quality Matrix</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">No generic templates or automated visual fingerprints. Content is manually structured to project established institutional and corporate authority.</p>
+                    <div class="py-2 text-center">
+                        <span class="text-5xl font-black text-emerald-400 tracking-tight">0.8s</span>
+                        <span class="block text-[10px] text-slate-400 mt-1 uppercase font-semibold tracking-wider">Largest Contentful Paint</span>
                     </div>
-                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                        <h3 class="font-bold text-sm text-slate-950 mb-1">Speed and Accountability</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">AI technologies are heavily used internally to accelerate engineering turnarounds, combined with structured, legally binding scope parameters to protect deadlines.</p>
+                    <div class="bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800 text-[10px] font-mono text-slate-400 flex justify-between mt-4">
+                        <span>Engine: React + Vite</span>
+                        <span class="text-emerald-400">100% Performance</span>
+                    </div>
+                </div>
+
+                <div class="bg-[#172133] p-5 rounded-2xl border border-slate-700/50 flex flex-col justify-between">
+                    <div class="flex justify-between items-center text-[10px] uppercase font-bold tracking-widest text-slate-500 mb-3">
+                        <span>Telemetry Integration</span>
+                        <span class="text-blue-400">Interactive</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="text-slate-400">Target Pipeline Conversion</span>
+                            <span class="font-bold text-white font-mono text-right" id="sim-conversion">14.2%</span>
+                        </div>
+                        <div class="w-full bg-[#0b0f19] h-2 rounded-full overflow-hidden border border-slate-800">
+                            <div class="bg-blue-500 h-full rounded-full transition-all duration-1000" id="sim-bar" style="width: 64%"></div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex justify-between items-center">
+                        <span class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Simulated Traffic Stream</span>
+                        <button onclick="triggerSimulationTick()" class="bg-slate-800 hover:bg-slate-700 text-white text-[10px] px-2.5 py-1 rounded font-bold border border-slate-700 transition">
+                            Pulse Vector
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="max-w-5xl mx-auto px-6 py-20">
+    <section class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-900">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-blue-500">Competitive Differentiation</span>
+                <h2 class="text-3xl font-black tracking-tight text-white mt-2 mb-6">Context dictates marketplace credibility.</h2>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-4">
+                    Generic AI tools generate assets in complete isolation, unaware of your local target landscape or strategic goals. They imprint a distinct, automated footprint that signals a lack of deliberate investment to discerning evaluators.
+                </p>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+                    We bridge the execution gap by applying precise, human-centric judgment. Every layout choice, optimization pathway, and parameter selection is engineered to broadcast established market authority before you begin your pitch.
+                </p>
+            </div>
+            <div class="p-6 bg-[#111827] rounded-2xl border border-slate-800 text-xs space-y-4">
+                <p class="text-slate-300 font-medium italic border-l-2 border-blue-500 pl-3">
+                    "The difference between an organization that feels real and one that feels improvised is rarely about the core product. It is almost always about presentation."
+                </p>
+                <p class="text-slate-500 text-[11px] text-right font-mono">— Forma Strategic Positioning Framework</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
         <div class="mb-12">
-            <span class="text-[10px] font-bold tracking-widest text-blue-600 uppercase">Service Portfolio & Pricing</span>
-            <h2 class="text-3xl font-black tracking-tight text-slate-950 mt-1">Indicative Delivery Structures</h2>
-            <p class="text-xs text-slate-500 mt-1">Balanced architecture optimizing international competitiveness with local market accessibility.</p>
+            <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase">Service Portfolios & Parameters</span>
+            <h2 class="text-3xl font-black tracking-tight text-white mt-1">Indicative Delivery Matrices</h2>
+            <p class="text-xs text-slate-400 mt-1">Balanced infrastructure optimizing international performance standards with local market entry pricing.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 items-stretch">
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="bg-[#111827] p-6 rounded-2xl border border-slate-800 shadow-sm flex flex-col justify-between">
                 <div>
-                    <span class="text-[10px] font-extrabold tracking-widest text-slate-400 uppercase">Category 01</span>
-                    <h3 class="text-lg font-black text-slate-950 mt-1 mb-2">Logo & Brand Identity</h3>
-                    <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                        First impressions are made long before a word is spoken. Attract professional contracts with an intentional visual mark, structural color palette alignments, and curated font sets.
+                    <span class="text-[9px] font-extrabold tracking-widest text-slate-500 uppercase">Category 01</span>
+                    <h3 class="text-lg font-black text-white mt-1 mb-2">Logo & Brand Identity</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        Secure high-value engagements. Attract premium clients with an intentional visual mark, cohesive color structures, and curated typography sets.
                     </p>
-                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-[11px] text-slate-500 font-medium">
-                        ⏱️ Delivery Horizon: <span class="text-slate-950 font-bold">3 to 5 days</span>
+                    <div class="bg-[#0b0f19] p-3 rounded-xl border border-slate-800/80 text-[11px] text-slate-400">
+                        ⏱️ Target Turnaround: <span class="text-white font-bold">3 to 5 Days</span>
                     </div>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-100 space-y-1">
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Local Tier:</span><span class="text-sm font-extrabold text-slate-950">BDT 300 - 800</span></div>
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">International:</span><span class="text-sm font-extrabold text-blue-600">USD 3 - 10</span></div>
+                <div class="mt-6 pt-4 border-t border-slate-800 space-y-1 bg-gradient-to-r from-slate-900 to-transparent p-2 rounded-lg">
+                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Local Tier:</span><span class="text-sm font-extrabold text-white">BDT 300 - 800</span></div>
+                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-500">Global Rate:</span><span class="text-xs font-bold text-blue-400">USD 3 - 10</span></div>
                 </div>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl border-2 border-slate-950 shadow-md flex flex-col justify-between relative">
-                <div class="absolute -top-3 right-4 bg-slate-950 text-white text-[9px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Engineered Frameworks</div>
+            <div class="bg-[#111827] p-6 rounded-2xl border-2 border-blue-600 shadow-xl flex flex-col justify-between relative">
+                <div class="absolute -top-3 right-4 bg-blue-600 text-white text-[9px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Engineered Frameworks</div>
                 <div>
-                    <span class="text-[10px] font-extrabold tracking-widest text-blue-600 uppercase">Category 02</span>
-                    <h3 class="text-lg font-black text-slate-950 mt-1 mb-2">Web Engineering</h3>
-                    <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                        High performance deployment. Structured architectures built accurately using optimized React and Vite engines to achieve rapid client execution workflows.
+                    <span class="text-[9px] font-extrabold tracking-widest text-blue-400 uppercase">Category 02</span>
+                    <h3 class="text-lg font-black text-white mt-1 mb-2">Web Engineering</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        High-performance deployments built properly with modular React and Vite pipelines to achieve rapid load times and robust interface transitions.
                     </p>
-                    <div class="space-y-1.5 mb-4 text-[11px] bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-600">
-                        <div class="flex justify-between"><span class="font-medium">Portfolio Site (5-10d):</span><span class="font-bold text-slate-950">BDT 1.5K - 4K</span></div>
-                        <div class="flex justify-between"><span class="font-medium">Business Platform (7-14d):</span><span class="font-bold text-slate-950">BDT 2.5K - 7K</span></div>
-                        <div class="flex justify-between"><span class="font-medium">Brand Launch Suite (10-14d):</span><span class="font-bold text-slate-950">BDT 4K - 10K</span></div>
+                    <div class="space-y-1.5 mb-4 text-[11px] bg-[#0b0f19] p-3 rounded-xl border border-slate-800/80 text-slate-300 font-mono">
+                        <div class="flex justify-between"><span>Portfolio Web (5-10d):</span><span class="text-white font-bold">BDT 1.5K-4K</span></div>
+                        <div class="flex justify-between"><span>Business Site (7-14d):</span><span class="text-white font-bold">BDT 2.5K-7K</span></div>
+                        <div class="flex justify-between"><span>Launch Suite (10-14d):</span><span class="text-white font-bold">BDT 4K-10K</span></div>
                     </div>
                 </div>
-                <div class="pt-3 border-t border-slate-100 space-y-1">
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Base Entry Global:</span><span class="text-sm font-extrabold text-blue-600">USD 15 - 100</span></div>
+                <div class="pt-3 border-t border-slate-800 space-y-1">
+                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Base Entry Global:</span><span class="text-sm font-extrabold text-blue-400">USD 15 - 100</span></div>
                 </div>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="bg-[#111827] p-6 rounded-2xl border border-slate-800 shadow-sm flex flex-col justify-between">
                 <div>
-                    <span class="text-[10px] font-extrabold tracking-widest text-slate-400 uppercase">Category 03</span>
-                    <h3 class="text-lg font-black text-slate-950 mt-1 mb-2">Analytics Dashboards</h3>
-                    <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                        Take fully clarified operational decisions. Isolate indicators and transform chaotic text files or user action vectors into visual charts and mapped monitoring matrices.
+                    <span class="text-[9px] font-extrabold tracking-widest text-slate-500 uppercase">Category 03</span>
+                    <h3 class="text-lg font-black text-white mt-1 mb-2">Analytics Dashboards</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        Isolate performance metrics. Convert unorganized spreadsheet logs or operational action metrics into unified visual interfaces and custom charts.
                     </p>
-                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-[11px] text-slate-500 font-medium">
-                        ⏱️ Delivery Horizon: <span class="text-slate-950 font-bold">5 to 7 days</span>
+                    <div class="bg-[#0b0f19] p-3 rounded-xl border border-slate-800/80 text-[11px] text-slate-400">
+                        ⏱️ Target Turnaround: <span class="text-white font-bold">5 to 7 Days</span>
                     </div>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-100 space-y-1">
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Local Tier:</span><span class="text-sm font-extrabold text-slate-950">BDT 3,500 - 8,000</span></div>
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">International:</span><span class="text-sm font-extrabold text-blue-600">USD 35 - 80</span></div>
+                <div class="mt-6 pt-4 border-t border-slate-800 space-y-1 bg-gradient-to-r from-slate-900 to-transparent p-2 rounded-lg">
+                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Local Tier:</span><span class="text-sm font-extrabold text-white">BDT 3,500 - 8,000</span></div>
+                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-500">Global Rate:</span><span class="text-xs font-bold text-blue-400">USD 35 - 80</span></div>
                 </div>
             </div>
         </div>
 
-        <div class="mt-8 bg-slate-900 text-slate-100 p-6 rounded-2xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div class="mt-8 bg-gradient-to-r from-[#111827] to-[#172133] text-slate-100 p-6 rounded-2xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div class="max-w-2xl">
                 <span class="text-[9px] font-bold uppercase tracking-widest text-blue-400 block mb-0.5">Strategic Bundling Architecture</span>
                 <p class="text-xs text-slate-400 leading-relaxed">
-                    A bundled revenue lever is highly prioritized. For clients deploying a <span class="text-white font-bold">Brand Launch Website</span>, analytics integration can be layered on as an immediate discounted add-on, accelerating overall data transparency while limiting customer acquisition footprints.
+                    Maximize clarity from day one. For clients deploying a <span class="text-white font-bold">Brand Launch Website</span>, integrated dashboard telemetry tracking can be seamlessly bundled at a discounted entry threshold, consolidating data monitoring requirements.
                 </p>
             </div>
-            <a href="#blueprint" class="text-xs font-bold text-slate-950 bg-white px-4 py-2.5 rounded-xl hover:bg-slate-100 transition whitespace-nowrap self-end md:self-auto">
-                Review Operational Loop
+            <a href="mailto:hello@forma.studio" class="text-xs font-bold text-slate-950 bg-white px-5 py-3 rounded-xl hover:bg-slate-100 transition whitespace-nowrap self-end md:self-auto">
+                Initiate Project Intake
             </a>
         </div>
     </section>
 
-    <section id="blueprint" class="bg-slate-950 text-white py-20 border-t border-slate-900">
-        <div class="max-w-5xl mx-auto px-6">
+    <section id="blueprint" class="bg-[#070a10] text-white py-20 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
             <div class="max-w-2xl mb-12">
-                <span class="text-[10px] font-bold tracking-widest text-blue-400 uppercase">Operational Risk Engineering</span>
-                <h2 class="text-3xl font-black tracking-tight mt-1">Our Accountability Infrastructure</h2>
-                <p class="text-xs text-slate-400 mt-2">How we eliminate typical project friction variables to protect speed and execution parity.</p>
+                <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase">Operational Protocol</span>
+                <h2 class="text-3xl font-black tracking-tight mt-1">The Engagement Infrastructure</h2>
+                <p class="text-xs text-slate-400 mt-2">Eliminating project friction through structured execution milestones.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="space-y-2 border-t border-slate-800 pt-4">
-                    <span class="text-xs font-bold text-blue-400 font-mono">01 / Scope Integrity</span>
-                    <h4 class="font-bold text-sm">Eliminating Scope Creep</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Open-ended descriptions invite endless revision drag. We isolate execution parameters via a formal written scope protocol before writing code or assets.</p>
+                    <span class="text-xs font-bold text-blue-500 font-mono">01 / Scope Integrity</span>
+                    <h4 class="font-bold text-sm text-slate-200">Strict Written Scope</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Endless feedback loops stall growth. We completely lock down exact milestone requirements via a structured scope checklist before writing code.</p>
                 </div>
                 <div class="space-y-2 border-t border-slate-800 pt-4">
-                    <span class="text-xs font-bold text-blue-400 font-mono">02 / Accelerated Velocity</span>
-                    <h4 class="font-bold text-sm">AI Production Levers</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">We utilize automated tools to rapidly scale production timelines, enabling client-focused cost metrics with premium agency-grade execution speed.</p>
+                    <span class="text-xs font-bold text-blue-500 font-mono">02 / Automated Efficiency</span>
+                    <h4 class="font-bold text-sm text-slate-200">AI-Accelerated Speed</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">We leverage advanced development utilities internally to accelerate raw structural creation, passing the efficiency savings directly to your project costs.</p>
                 </div>
                 <div class="space-y-2 border-t border-slate-800 pt-4">
-                    <span class="text-xs font-bold text-blue-400 font-mono">03 / State Continuity</span>
-                    <h4 class="font-bold text-sm"> बांग्लादेश Operational Transit</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">International payment layers run securely through monitored Payoneer and Wise configurations to offset payment friction delays and operational disruption variables.</p>
+                    <span class="text-xs font-bold text-blue-500 font-mono">03 / Transaction Security</span>
+                    <h4 class="font-bold text-sm text-slate-200">Global Operational Transit</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">International billing processes deploy securely through validated routing frameworks to eliminate processing delays and protect execution timelines.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto px-6 py-20">
-        <div class="bg-white p-6 md:p-8 rounded-3xl border border-slate-200/70 shadow-sm">
-            <div class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
-                <div>
-                    <h3 class="text-xl font-black text-slate-950 tracking-tight">System Operational Volume</h3>
-                    <p class="text-xs text-slate-400">Live dynamic analytics rendering compiled from validated deployments</p>
-                </div>
-                <div class="bg-slate-50 border border-slate-100 text-slate-900 px-5 py-3 rounded-xl text-center min-w-[160px]">
-                    <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-400">Aggregated Income Pool</span>
-                    <span id="total-revenue-display" class="text-lg font-black text-slate-950">BDT 0</span>
-                </div>
-            </div>
-            <div class="relative w-full h-64 md:h-80">
-                <canvas id="formaOperationsChart"></canvas>
-            </div>
-        </div>
-    </section>
-
-    <div id="admin-panel" class="hidden max-w-5xl mx-auto mx-6 my-8 p-6 bg-yellow-50/50 border border-yellow-200 rounded-3xl shadow-inner">
-        <div class="flex items-center gap-2 border-b border-yellow-200 pb-3 mb-6">
-            <span class="text-lg">🔧</span>
-            <h2 class="text-sm font-black text-yellow-900 uppercase tracking-wider">Management Control Configuration Interface</h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4 bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
-                <h3 class="font-bold text-slate-950 text-xs uppercase tracking-tight border-b border-slate-100 pb-2">1. Modify Operational Brand Value Content</h3>
-                <div>
-                    <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Interactive Hero Headline</label>
-                    <input type="text" id="input-headline" class="w-full p-2.5 border border-slate-200 rounded-lg text-xs font-medium focus:ring-2 focus:ring-blue-500/20" oninput="executeLiveStateCompilations()">
-                </div>
-                <div>
-                    <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Interactive Subheadline Value Proposition</label>
-                    <textarea id="input-subheadline" rows="3" class="w-full p-2.5 border border-slate-200 rounded-lg text-xs font-medium focus:ring-2 focus:ring-blue-500/20" oninput="executeLiveStateCompilations()"></textarea>
-                </div>
-                <hr class="border-slate-100 my-4">
-                
-                <form id="ledger-form" onsubmit="appendVerifiedTransaction(event)">
-                    <h3 class="font-bold text-slate-950 text-xs uppercase tracking-tight mb-3">2. Append Logged Contract Transaction</h3>
-                    <div class="space-y-3">
-                        <div>
-                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Service Portfolio Mapping Link</label>
-                            <select id="tx-category" class="w-full p-2.5 border border-slate-200 rounded-lg text-xs font-semibold bg-slate-50">
-                                <option value="brandIdentity">Category 01: Logo & Brand Identity</option>
-                                <option value="webDev">Category 02: Web Engineering</option>
-                                <option value="analytics">Category 03: Analytics Dashboards</option>
-                            </select>
-                        </div>
-                        <div class="grid grid-cols-2 gap-3">
-                            <div>
-                                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Contract Volume (BDT)</label>
-                                <input type="number" id="tx-value" required class="w-full p-2.5 border border-slate-200 rounded-lg text-xs" placeholder="e.g. 5000">
-                            </div>
-                            <div>
-                                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Unit Deliverables (Qty)</label>
-                                <input type="number" id="tx-quantity" required value="1" class="w-full p-2.5 border border-slate-200 rounded-lg text-xs" placeholder="1">
-                            </div>
-                        </div>
-                        <button type="submit" class="w-full bg-slate-950 text-white p-2.5 rounded-lg text-xs font-bold hover:bg-slate-800 transition tracking-tight">
-                            Deploy Verified Transaction to Array Memory
-                        </button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="bg-slate-900 text-slate-100 p-5 rounded-2xl flex flex-col justify-between border border-slate-800 shadow-xl">
-                <div class="space-y-2">
-                    <h3 class="font-bold text-green-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                        <span>●</span> Cloud Serialization Manifest Payload
-                    </h3>
-                    <p class="text-[11px] text-slate-400 leading-relaxed">
-                        To commit operations and achieve absolute permanent state continuity online across live environments, copy the JSON block generated below, navigate to your GitHub instance, and fully overwrite the contents inside your <code class="text-yellow-400 font-mono text-xs">data.json</code> vault file.
-                    </p>
-                    <textarea id="json-export-string" readonly class="w-full h-44 bg-slate-950 font-mono text-[11px] text-green-400 p-3 mt-2 rounded-xl border border-slate-800 resize-none select-all focus:outline-none"></textarea>
-                </div>
-                <button onclick="copyPayloadBuffer()" class="w-full bg-green-400 text-slate-950 font-black p-3 rounded-xl text-xs hover:bg-green-300 transition shadow-md mt-4 tracking-tight">
-                    📋 Copy Export Data Payload Structure
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <footer class="bg-white border-t border-slate-200 text-slate-400 text-center py-12 text-xs">
-        <p class="font-medium text-slate-800 mb-1">Your classmate. Your timeline. Your price.</p>
-        <p class="text-[11px] text-slate-400">&copy; 2026 Forma System Portfolio — Course: Business Strategy (Code: W450) IBA, University of Dhaka.</p>
+    <footer class="bg-[#0b0f19] border-t border-slate-900 text-slate-500 text-center py-12 text-xs">
+        <p class="font-bold text-slate-300 mb-1">Your classmate. Your timeline. Your price.</p>
+        <p class="text-[10px] text-slate-500">&copy; 2026 Forma System Portfolio. Engineered for those building something real.</p>
     </footer>
 
     <script>
-        let liveStateMemory = {};
-        let operationalChartReference = null;
-
-        // Fetch initialization variables from database file tracking anti-cache protocols
-        async function fetchSystemCloudMatrix() {
-            try {
-                const response = await fetch(`./data.json?v=${Date.now()}`);
-                liveStateMemory = await response.json();
-                renderSystemInterfaceDOM();
-            } catch (error) {
-                console.error("Critical Cloud Fetch Failure:", error);
-                alert("Matrix Read Error: Ensure data.json exists accurately in the deployment directory folder hierarchy.");
-            }
-        }
-
-        function renderSystemInterfaceDOM() {
-            document.getElementById('display-headline').innerText = liveStateMemory.headline;
-            document.getElementById('display-subheadline').innerText = liveStateMemory.subheadline;
-            document.getElementById('input-headline').value = liveStateMemory.headline;
-            document.getElementById('input-subheadline').value = liveStateMemory.subheadline;
+        function triggerSimulationTick() {
+            // Generate standard variance tracking shifts
+            const conversionNode = document.getElementById('sim-conversion');
+            const progressIndicatorNode = document.getElementById('sim-bar');
             
-            recalculateFinancialMetrics();
-            compilePayloadSinks();
+            const prospectiveRate = (12.0 + Math.random() * 6.0).toFixed(1);
+            const relativePercentValue = Math.floor(prospectiveRate * 4.5);
             
-            if (operationalChartReference) { operationalChartReference.destroy(); }
-            initializeOperationsChart();
+            conversionNode.innerText = `${prospectiveRate}%`;
+            progressIndicatorNode.style.width = `${relativePercentValue}%`;
+            
+            // Apply quick pulse highlight feedback
+            conversionNode.classList.add('text-blue-400');
+            setTimeout(() => conversionNode.classList.remove('text-blue-400'), 400);
         }
-
-        function toggleAdminPanel() {
-            document.getElementById('admin-panel').classList.toggle('hidden');
-        }
-
-        function executeLiveStateCompilations() {
-            liveStateMemory.headline = document.getElementById('input-headline').value;
-            liveStateMemory.subheadline = document.getElementById('input-subheadline').value;
-            document.getElementById('display-headline').innerText = liveStateMemory.headline;
-            document.getElementById('display-subheadline').innerText = liveStateMemory.subheadline;
-            compilePayloadSinks();
-        }
-
-        function appendVerifiedTransaction(event) {
-            event.preventDefault();
-            const categoryKey = document.getElementById('tx-category').value;
-            const absoluteValue = parseFloat(document.getElementById('tx-value').value);
-            const absoluteUnits = parseInt(document.getElementById('tx-quantity').value);
-            const compoundedFinances = absoluteValue * absoluteUnits;
-
-            if (categoryKey === 'brandIdentity') {
-                liveStateMemory.brandIdentitySales += absoluteUnits;
-                liveStateMemory.brandIdentityRevenue += compoundedFinances;
-            } else if (categoryKey === 'webDev') {
-                liveStateMemory.webDevSales += absoluteUnits;
-                liveStateMemory.webDevRevenue += compoundedFinances;
-            } else if (categoryKey === 'analytics') {
-                liveStateMemory.analyticsSales += absoluteUnits;
-                liveStateMemory.analyticsRevenue += compoundedFinances;
-            }
-
-            recalculateFinancialMetrics();
-            compilePayloadSinks();
-            synchronizeChartDimensions();
-            document.getElementById('ledger-form').reset();
-        }
-
-        function recalculateFinancialMetrics() {
-            const sumTotalAggregate = liveStateMemory.brandIdentityRevenue + liveStateMemory.webDevRevenue + liveStateMemory.analyticsRevenue;
-            document.getElementById('total-revenue-display').innerText = `BDT ${sumTotalAggregate.toLocaleString()}`;
-        }
-
-        function compilePayloadSinks() {
-            document.getElementById('json-export-string').value = JSON.stringify(liveStateMemory, null, 2);
-        }
-
-        function copyPayloadBuffer() {
-            const bufferArea = document.getElementById('json-export-string');
-            bufferArea.select();
-            document.execCommand('copy');
-            alert("Payload successfully mapped to operational buffer clipboard. Open data.json on GitHub and safely overwrite.");
-        }
-
-        function initializeOperationsChart() {
-            const contextBuffer = document.getElementById('formaOperationsChart').getContext('2d');
-            operationalChartReference = new Chart(contextBuffer, {
-                type: 'bar',
-                data: {
-                    labels: [
-                        `Identity System (${liveStateMemory.brandIdentitySales} Sales)`, 
-                        `Web Architecture (${liveStateMemory.webDevSales} Contracts)`, 
-                        `Analytics Dashboards (${liveStateMemory.analyticsSales} Deployed)`
-                    ],
-                    datasets: [{
-                        data: [liveStateMemory.brandIdentityRevenue, liveStateMemory.webDevRevenue, liveStateMemory.analyticsRevenue],
-                        backgroundColor: ['#94a3b8', '#0f172a', '#2563eb'],
-                        borderRadius: 6,
-                        barThickness: 60
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: {
-                        y: { beginAtZero: true, grid: { color: '#f1f5f9' }, ticks: { font: { size: 10 }, callback: val => '৳' + val } },
-                        x: { grid: { display: false }, ticks: { font: { size: 11, weight: '600' } } }
-                    }
-                }
-            });
-        }
-
-        function synchronizeChartDimensions() {
-            if (operationalChartReference) {
-                operationalChartReference.data.labels = [
-                    `Identity System (${liveStateMemory.brandIdentitySales} Sales)`, 
-                    `Web Architecture (${liveStateMemory.webDevSales} Contracts)`, 
-                    `Analytics Dashboards (${liveStateMemory.analyticsSales} Deployed)`
-                ];
-                operationalChartReference.data.datasets[0].data = [
-                    liveStateMemory.brandIdentityRevenue, 
-                    liveStateMemory.webDevRevenue, 
-                    liveStateMemory.analyticsRevenue
-                ];
-                operationalChartReference.update();
-            }
-        }
-
-        window.onload = fetchSystemCloudMatrix;
     </script>
 </body>
 </html>
