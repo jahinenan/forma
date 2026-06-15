@@ -3,269 +3,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forma — Digital Design & Metric Architecture</title>
+    <title>Forma — Premium Identity & Data Architecture Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
 </head>
-<body class="bg-[#0b0f19] text-[#f1f5f9] font-sans antialiased selection:bg-blue-600 selection:text-white">
+<body class="bg-[#060913] text-[#f1f5f9] font-sans antialiased selection:bg-blue-600 selection:text-white scroll-smooth">
 
-    <nav class="bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2.5">
-                <span class="text-lg font-black tracking-tighter text-white">FORMA</span>
-                <span class="text-[9px] font-bold uppercase tracking-widest bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/20">Studio</span>
+    <nav class="bg-[#060913]/90 backdrop-blur-md border-b border-slate-800/80 sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-xl font-black tracking-tighter text-white uppercase">Forma</span>
+                <span class="text-[9px] font-bold uppercase tracking-widest bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/20">Studio Engine</span>
             </div>
-            <div class="flex space-x-8 items-center">
-                <a href="#showroom" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">The Grid</a>
-                <a href="#services" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">Services & Rates</a>
-                <a href="#blueprint" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">The Blueprint</a>
-                <a href="#services" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-500 transition shadow-md shadow-blue-600/10">
-                    Start Building
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#market-challenge" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">The Challenge</a>
+                <a href="#showroom" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">Interactive Showroom</a>
+                <a href="#services" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">Service Matrices</a>
+                <a href="#differentiation" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">Differentiation Framework</a>
+                <a href="#profit-loop" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">Growth Model</a>
+                <a href="#mitigation" class="text-xs text-slate-400 hover:text-white font-medium tracking-tight transition">Risk Architecture</a>
+            </div>
+            <div>
+                <a href="#services" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-600/20 tracking-tight">
+                    Start Building Something Real
                 </a>
             </div>
         </div>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
-        <div class="max-w-3xl mx-auto space-y-6">
-            <div class="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700/60 text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse"></span> Intentional Craftsmanship vs Automation Overwhelm
+    <header class="relative max-w-7xl mx-auto px-6 pt-24 pb-20 border-b border-slate-900">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.08),transparent_55%)]"></div>
+        <div class="relative max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 bg-slate-800/60 border border-slate-700/60 text-slate-300 text-[10px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-ping"></span> Digital Footprint Architecture
             </div>
-            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight leading-[1.05] md:leading-[1.05]">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.02] md:leading-[1.02]">
                 What does your business look like to someone who doesn't know you?
             </h1>
-            <p class="text-sm md:text-base text-slate-400 leading-relaxed max-w-2xl mx-auto font-normal">
-                The visual identity you project, or fail to project, speaks long before you do. A well-made logo is not vanity. A properly built website is not a luxury. These are the quiet signals that prove you are serious before you speak.
+            <p class="text-sm md:text-base text-slate-400 leading-relaxed max-w-3xl mx-auto font-normal">
+                Your classmates are already forming opinions. A client googles you before replying to your email. A recruiter checks your portfolio before reading your CV. The visual identity you project, or fail to project, speaks long before you do.
             </p>
-            <div class="pt-4 flex justify-center gap-4">
-                <a href="#services" class="bg-blue-600 text-white text-xs font-bold px-6 py-3.5 rounded-xl hover:bg-blue-500 transition shadow-lg shadow-blue-600/10">
-                    Explore Service offerings
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="#services" class="bg-blue-600 text-white text-xs font-bold px-7 py-4 rounded-xl hover:bg-blue-500 transition shadow-xl shadow-blue-600/10 tracking-tight">
+                    Review Indicative Pricing Matrix
                 </a>
-                <a href="#showroom" class="bg-slate-800 text-slate-200 text-xs font-bold px-6 py-3.5 rounded-xl border border-slate-700 hover:bg-slate-700 transition">
-                    View Interactive Grid
+                <a href="#showroom" class="bg-[#0f172a] text-slate-200 text-xs font-bold px-7 py-4 rounded-xl border border-slate-800 hover:bg-slate-800 transition tracking-tight">
+                    Launch Interactive UI Workspace
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="showroom" class="max-w-6xl mx-auto px-6 py-12">
-        <div class="bg-[#111827] rounded-3xl border border-slate-800 p-6 md:p-8 shadow-2xl">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-800 pb-6 mb-8 gap-4">
-                <div>
-                    <h3 class="text-lg font-bold text-white tracking-tight">The Output Interface</h3>
-                    <p class="text-xs text-slate-400">Live components demonstrating structural clarity and optimized execution paradigms</p>
+    <section id="market-challenge" class="max-w-7xl mx-auto px-6 py-20 border-b border-slate-900">
+        <div class="grid lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-5 space-y-4">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-blue-500 font-mono">01 // Market Disruption</span>
+                <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-white">The Paradox of Unedited AI Output</h2>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+                    The increasing development rate of our regional digital economy is not matched by the availability of affordable, premium-quality service infrastructure. Today, early-stage entrepreneurs, creative consultants, and small business owners realize a professional online presence is completely non-negotiable. However, established agencies remain completely cost-prohibitive.
+                </p>
+            </div>
+            <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+                <div class="p-6 bg-[#0c1222] rounded-2xl border border-slate-800/80 space-y-3">
+                    <div class="w-8 h-8 rounded-lg bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 text-xs font-bold font-mono">!</div>
+                    <h4 class="text-sm font-bold text-white">The "No Deliberate Investment" Signature</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        While basic output is accessible via free AI generators, raw automated work leaves distinct visual signatures. Savvy evaluators instantly notice this automated fingerprint, which signals a complete lack of human-centric consideration and zero professional investment.
+                    </p>
                 </div>
-                <div class="flex gap-2">
-                    <span class="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/40"></span>
-                    <span class="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/40"></span>
-                    <span class="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/40"></span>
+                <div class="p-6 bg-[#0c1222] rounded-2xl border border-slate-800/80 space-y-3">
+                    <div class="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-xs font-bold font-mono">✓</div>
+                    <h4 class="text-sm font-bold text-white">Context vs. Isolated Automation</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        The ultimate competitive axis is what an automated script builds in isolation versus what an actual human client requires when their marketplace credibility is on the line. Forma bridges this exact operational gap through context-driven design judgment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showroom" class="max-w-7xl mx-auto px-6 py-20 border-b border-slate-900">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+            <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase font-mono">02 // Operational Showroom</span>
+            <h2 class="text-3xl font-extrabold tracking-tight text-white">Live Workspace Simulator</h2>
+            <p class="text-xs text-slate-400">Interact with the preview matrix tabs below to evaluate how our design logic and interface telemetry functions.</p>
+        </div>
+
+        <div class="bg-[#0b101d] rounded-2xl border border-slate-800 shadow-2xl overflow-hidden">
+            <div class="bg-[#0f1626] px-6 py-4 border-b border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="flex gap-2 items-center">
+                    <span class="w-3 h-3 rounded-full bg-red-500/30 border border-red-500/60"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500/30 border border-yellow-500/60"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500/30 border border-emerald-500/60"></span>
+                    <span class="text-xs text-slate-500 font-mono ml-2">forma_runtime_viewer.sh</span>
+                </div>
+                <div class="flex bg-[#060913] p-1 rounded-lg border border-slate-800 text-[11px] font-semibold">
+                    <button id="tab-btn-1" onclick="shiftWorkspaceView(1)" class="px-4 py-1.5 rounded-md transition text-white bg-blue-600">01. Identity Core</button>
+                    <button id="tab-btn-2" onclick="shiftWorkspaceView(2)" class="px-4 py-1.5 rounded-md transition text-slate-400 hover:text-white">02. Code Performance</button>
+                    <button id="tab-btn-3" onclick="shiftWorkspaceView(3)" class="px-4 py-1.5 rounded-md transition text-slate-400 hover:text-white">03. Telemetry Integration</button>
                 </div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-[#172133] p-5 rounded-2xl border border-slate-700/50 flex flex-col justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-center text-[10px] uppercase font-bold tracking-widest text-slate-500 mb-3">
-                            <span>Visual Architecture</span>
-                            <span class="text-blue-400">Verified</span>
-                        </div>
-                        <h4 class="text-2xl font-black tracking-tighter text-white">FORMA™</h4>
-                        <p class="text-[11px] text-slate-400 leading-relaxed mt-2">
-                            Curated typography pairs aligned perfectly with slate monochrome layouts to command immediate institutional authority.
+            <div class="p-6 md:p-8 min-h-[340px] flex items-center justify-center">
+                <div id="panel-view-1" class="w-full grid md:grid-cols-12 gap-8 items-center transition-all duration-300">
+                    <div class="md:col-span-5 space-y-4">
+                        <div class="text-xs uppercase tracking-widest text-slate-500 font-bold font-mono">Identity Archetype //</div>
+                        <h3 class="text-2xl font-black text-white tracking-tighter">FORMA DIGITAL</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            A showcase of intentional composition. We eliminate generic layouts by implementing structured typography metrics, custom grid systems, and functional slate hierarchies.
                         </p>
                     </div>
-                    <div class="grid grid-cols-4 gap-2 pt-2 border-t border-slate-800">
-                        <div class="h-6 bg-[#0b0f19] rounded border border-slate-800"></div>
-                        <div class="h-6 bg-[#1e293b] rounded"></div>
-                        <div class="h-6 bg-[#2563eb] rounded"></div>
-                        <div class="h-6 bg-[#f1f5f9] rounded"></div>
+                    <div class="md:col-span-7 bg-[#060913] border border-slate-800 rounded-xl p-6 space-y-4">
+                        <div class="flex justify-between items-center text-[10px] font-mono text-slate-500">
+                            <span>FONT PAIRING SYSTEM</span>
+                            <span class="text-emerald-400">ACTIVE COMPOSITION</span>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="block text-[11px] font-mono text-slate-400">Primary Heading H1: Plus Jakarta Sans (ExtraBold)</span>
+                            <div class="text-xl font-extrabold text-white tracking-tight">The visual signature of careful work.</div>
+                        </div>
+                        <hr class="border-slate-800">
+                        <div class="grid grid-cols-4 gap-2 text-center text-[9px] font-bold font-mono">
+                            <div class="py-2 rounded bg-[#060913] border border-slate-800 text-slate-400">#060913</div>
+                            <div class="py-2 rounded bg-[#0c1222] text-slate-400">#0C1222</div>
+                            <div class="py-2 rounded bg-blue-600 text-white">#2563EB</div>
+                            <div class="py-2 rounded bg-slate-100 text-slate-950">#F1F5F9</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-[#172133] p-5 rounded-2xl border border-slate-700/50 flex flex-col justify-between">
-                    <div class="flex justify-between items-center text-[10px] uppercase font-bold tracking-widest text-slate-500 mb-3">
-                        <span>Web Core Engineering</span>
-                        <span class="text-emerald-400">Production</span>
+                <div id="panel-view-2" class="w-full hidden grid md:grid-cols-12 gap-8 items-center transition-all duration-300">
+                    <div class="md:col-span-5 space-y-4">
+                        <div class="text-xs uppercase tracking-widest text-slate-500 font-bold font-mono">Performance Matrix //</div>
+                        <h3 class="text-2xl font-black text-white tracking-tighter">React & Vite Architecture</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            We build smooth, clean digital products. No bloated code, heavy weights, or sluggish systems. Optimized component models guarantee instant responsiveness.
+                        </p>
                     </div>
-                    <div class="py-2 text-center">
-                        <span class="text-5xl font-black text-emerald-400 tracking-tight">0.8s</span>
-                        <span class="block text-[10px] text-slate-400 mt-1 uppercase font-semibold tracking-wider">Largest Contentful Paint</span>
-                    </div>
-                    <div class="bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800 text-[10px] font-mono text-slate-400 flex justify-between mt-4">
-                        <span>Engine: React + Vite</span>
-                        <span class="text-emerald-400">100% Performance</span>
+                    <div class="md:col-span-7 bg-[#060913] border border-slate-800 rounded-xl p-6 text-center space-y-4">
+                        <div class="flex justify-between items-center text-[10px] font-mono text-slate-500 text-left">
+                            <span>BENCHMARK DIAGNOSTICS</span>
+                            <span class="text-emerald-400">100% AUDIT PASS</span>
+                        </div>
+                        <div class="inline-block mx-auto py-4">
+                            <span class="text-6xl font-black text-emerald-400 font-mono tracking-tighter">0.8s</span>
+                            <span class="block text-[10px] font-mono uppercase tracking-widest text-slate-400 mt-2">Largest Contentful Paint Horizon</span>
+                        </div>
+                        <div class="w-full bg-slate-800/50 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-emerald-400 h-full w-full"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-[#172133] p-5 rounded-2xl border border-slate-700/50 flex flex-col justify-between">
-                    <div class="flex justify-between items-center text-[10px] uppercase font-bold tracking-widest text-slate-500 mb-3">
-                        <span>Telemetry Integration</span>
-                        <span class="text-blue-400">Interactive</span>
+                <div id="panel-view-3" class="w-full hidden grid md:grid-cols-12 gap-8 items-center transition-all duration-300">
+                    <div class="md:col-span-5 space-y-4">
+                        <div class="text-xs uppercase tracking-widest text-slate-500 font-bold font-mono">Data Pipeline //</div>
+                        <h3 class="text-2xl font-black text-white tracking-tighter">Custom Telemetry</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Stop operating without clear visibility. We map out complex action streams and unorganized data files directly into beautifully clear monitoring layouts.
+                        </p>
                     </div>
-                    <div class="space-y-2">
-                        <div class="flex justify-between items-center text-xs">
-                            <span class="text-slate-400">Target Pipeline Conversion</span>
-                            <span class="font-bold text-white font-mono text-right" id="sim-conversion">14.2%</span>
+                    <div class="md:col-span-7 bg-[#060913] border border-slate-800 rounded-xl p-5 space-y-4">
+                        <div class="flex justify-between items-center text-[10px] font-mono text-slate-500">
+                            <span>LIVE SIMULATED INBOUND TELEMETRY STREAM</span>
+                            <span class="text-blue-400 animate-pulse">● RE-INDEXING</span>
                         </div>
-                        <div class="w-full bg-[#0b0f19] h-2 rounded-full overflow-hidden border border-slate-800">
-                            <div class="bg-blue-500 h-full rounded-full transition-all duration-1000" id="sim-bar" style="width: 64%"></div>
+                        <div class="bg-[#0b101d] p-4 rounded-xl border border-slate-800/80 flex justify-between items-center">
+                            <div>
+                                <span class="block text-[10px] text-slate-500 font-bold uppercase tracking-wider">Conversion Yield Rate</span>
+                                <span class="text-3xl font-black font-mono text-white mt-1 block" id="showroom-metric-text">14.2%</span>
+                            </div>
+                            <button onclick="executeTelemetryPulse()" class="bg-blue-600 hover:bg-blue-500 text-white font-mono text-[10px] font-bold px-3 py-2 rounded-lg transition shadow-md shadow-blue-600/10">
+                                Pulse Vector
+                            </button>
                         </div>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-800 flex justify-between items-center">
-                        <span class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Simulated Traffic Stream</span>
-                        <button onclick="triggerSimulationTick()" class="bg-slate-800 hover:bg-slate-700 text-white text-[10px] px-2.5 py-1 rounded font-bold border border-slate-700 transition">
-                            Pulse Vector
-                        </button>
+                        <div class="w-full bg-slate-800/40 h-2 rounded-full overflow-hidden border border-slate-800">
+                            <div id="showroom-metric-bar" class="bg-blue-500 h-full rounded-full transition-all duration-500" style="width: 58%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-900">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-[10px] font-bold uppercase tracking-widest text-blue-500">Competitive Differentiation</span>
-                <h2 class="text-3xl font-black tracking-tight text-white mt-2 mb-6">Context dictates marketplace credibility.</h2>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-4">
-                    Generic AI tools generate assets in complete isolation, unaware of your local target landscape or strategic goals. They imprint a distinct, automated footprint that signals a lack of deliberate investment to discerning evaluators.
-                </p>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
-                    We bridge the execution gap by applying precise, human-centric judgment. Every layout choice, optimization pathway, and parameter selection is engineered to broadcast established market authority before you begin your pitch.
-                </p>
-            </div>
-            <div class="p-6 bg-[#111827] rounded-2xl border border-slate-800 text-xs space-y-4">
-                <p class="text-slate-300 font-medium italic border-l-2 border-blue-500 pl-3">
-                    "The difference between an organization that feels real and one that feels improvised is rarely about the core product. It is almost always about presentation."
-                </p>
-                <p class="text-slate-500 text-[11px] text-right font-mono">— Forma Strategic Positioning Framework</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
-        <div class="mb-12">
-            <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase">Service Portfolios & Parameters</span>
-            <h2 class="text-3xl font-black tracking-tight text-white mt-1">Indicative Delivery Matrices</h2>
-            <p class="text-xs text-slate-400 mt-1">Balanced infrastructure optimizing international performance standards with local market entry pricing.</p>
+    <section id="services" class="max-w-7xl mx-auto px-6 py-20 border-b border-slate-900">
+        <div class="mb-12 space-y-2">
+            <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase font-mono">03 // Service Packages</span>
+            <h2 class="text-3xl font-black tracking-tight text-white">Indicative Delivery Structures</h2>
+            <p class="text-xs text-slate-400">Forma structures three complementary service offerings to support a seamless, natural growth progression from initial launch to data engineering.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 items-stretch">
-            <div class="bg-[#111827] p-6 rounded-2xl border border-slate-800 shadow-sm flex flex-col justify-between">
-                <div>
-                    <span class="text-[9px] font-extrabold tracking-widest text-slate-500 uppercase">Category 01</span>
-                    <h3 class="text-lg font-black text-white mt-1 mb-2">Logo & Brand Identity</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                        Secure high-value engagements. Attract premium clients with an intentional visual mark, cohesive color structures, and curated typography sets.
+            <div class="bg-[#0b101d] p-6 rounded-2xl border border-slate-800 shadow-sm flex flex-col justify-between space-y-8">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] font-extrabold tracking-widest text-slate-500 font-mono uppercase">Category // 01</span>
+                        <span class="text-[10px] font-mono text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/5 border border-emerald-500/20">Fast Track</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white tracking-tight">Logo & Brand Identity</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        First impressions are formed long before a word is spoken. Attract your target audience and stand out from competitors with a distinct visual mark, coordinated palettes, and tailored typography.
                     </p>
-                    <div class="bg-[#0b0f19] p-3 rounded-xl border border-slate-800/80 text-[11px] text-slate-400">
-                        ⏱️ Target Turnaround: <span class="text-white font-bold">3 to 5 Days</span>
+                    <div class="bg-[#060913] p-3 rounded-xl border border-slate-800/80 text-[11px] text-slate-400 font-mono">
+                        ⏱ Delivery Horizon: <span class="text-white font-bold">3 to 5 Days</span>
                     </div>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-800 space-y-1 bg-gradient-to-r from-slate-900 to-transparent p-2 rounded-lg">
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Local Tier:</span><span class="text-sm font-extrabold text-white">BDT 300 - 800</span></div>
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-500">Global Rate:</span><span class="text-xs font-bold text-blue-400">USD 3 - 10</span></div>
+                <div class="pt-4 border-t border-slate-800 space-y-2 font-mono text-xs">
+                    <div class="flex justify-between items-baseline"><span class="text-slate-500">Local Rate:</span><span class="text-sm font-bold text-white">BDT 300 - 800</span></div>
+                    <div class="flex justify-between items-baseline"><span class="text-slate-600">International:</span><span class="text-xs font-semibold text-blue-400">USD 3 - 10</span></div>
                 </div>
             </div>
 
-            <div class="bg-[#111827] p-6 rounded-2xl border-2 border-blue-600 shadow-xl flex flex-col justify-between relative">
-                <div class="absolute -top-3 right-4 bg-blue-600 text-white text-[9px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Engineered Frameworks</div>
-                <div>
-                    <span class="text-[9px] font-extrabold tracking-widest text-blue-400 uppercase">Category 02</span>
-                    <h3 class="text-lg font-black text-white mt-1 mb-2">Web Engineering</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                        High-performance deployments built properly with modular React and Vite pipelines to achieve rapid load times and robust interface transitions.
+            <div class="bg-[#0b101d] p-6 rounded-2xl border-2 border-blue-600 shadow-xl flex flex-col justify-between space-y-8 relative">
+                <div class="absolute -top-3 right-6 bg-blue-600 text-white text-[9px] font-black px-3 py-1 rounded-full uppercase tracking-wider font-mono">Core System</div>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] font-extrabold tracking-widest text-blue-400 font-mono uppercase">Category // 02</span>
+                        <span class="text-[10px] font-mono text-blue-400 px-2 py-0.5 rounded bg-blue-500/5 border border-blue-500/20">Production Ready</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white tracking-tight">Web Engineering</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        High-performance deployments. Clean user interfaces built properly with modular React and Vite setups to achieve ultra-fast load speeds and a smooth user experience.
                     </p>
-                    <div class="space-y-1.5 mb-4 text-[11px] bg-[#0b0f19] p-3 rounded-xl border border-slate-800/80 text-slate-300 font-mono">
-                        <div class="flex justify-between"><span>Portfolio Web (5-10d):</span><span class="text-white font-bold">BDT 1.5K-4K</span></div>
-                        <div class="flex justify-between"><span>Business Site (7-14d):</span><span class="text-white font-bold">BDT 2.5K-7K</span></div>
-                        <div class="flex justify-between"><span>Launch Suite (10-14d):</span><span class="text-white font-bold">BDT 4K-10K</span></div>
+                    
+                    <div class="space-y-2 text-[11px] bg-[#060913] p-3 rounded-xl border border-slate-800 text-slate-300 font-mono">
+                        <div class="flex justify-between border-b border-slate-900 pb-1.5">
+                            <span class="text-slate-500">Portfolio (5-10d):</span>
+                            <span class="text-white font-bold">BDT 1.5K - 4K <span class="text-slate-600 text-[10px]">/ $15-$40</span></span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-900 pb-1.5">
+                            <span class="text-slate-500">Business (7-14d):</span>
+                            <span class="text-white font-bold">BDT 2.5K - 7K <span class="text-slate-600 text-[10px]">/ $25-$70</span></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Launch Suite (10-14d):</span>
+                            <span class="text-white font-bold">BDT 4K - 10K <span class="text-slate-600 text-[10px]">/ $40-$100</span></span>
+                        </div>
                     </div>
                 </div>
-                <div class="pt-3 border-t border-slate-800 space-y-1">
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Base Entry Global:</span><span class="text-sm font-extrabold text-blue-400">USD 15 - 100</span></div>
+                <div class="pt-2 border-t border-slate-800 flex justify-between items-center font-mono text-xs">
+                    <span class="text-slate-500">Entry Index Global:</span>
+                    <span class="text-sm font-black text-blue-400">USD 15 - 100</span>
                 </div>
             </div>
 
-            <div class="bg-[#111827] p-6 rounded-2xl border border-slate-800 shadow-sm flex flex-col justify-between">
-                <div>
-                    <span class="text-[9px] font-extrabold tracking-widest text-slate-500 uppercase">Category 03</span>
-                    <h3 class="text-lg font-black text-white mt-1 mb-2">Analytics Dashboards</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                        Isolate performance metrics. Convert unorganized spreadsheet logs or operational action metrics into unified visual interfaces and custom charts.
+            <div class="bg-[#0b101d] p-6 rounded-2xl border border-slate-800 shadow-sm flex flex-col justify-between space-y-8">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] font-extrabold tracking-widest text-slate-500 font-mono uppercase">Category // 03</span>
+                        <span class="text-[10px] font-mono text-purple-400 px-2 py-0.5 rounded bg-purple-500/5 border border-purple-500/20">Data Pipeline</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white tracking-tight">Analytics Dashboards</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Stop managing blind. Isolate key metrics and map complex operational layers into clear data streams and custom visualizations that keep your business insights organized.
                     </p>
-                    <div class="bg-[#0b0f19] p-3 rounded-xl border border-slate-800/80 text-[11px] text-slate-400">
-                        ⏱️ Target Turnaround: <span class="text-white font-bold">5 to 7 Days</span>
+                    <div class="bg-[#060913] p-3 rounded-xl border border-slate-800/80 text-[11px] text-slate-400 font-mono">
+                        ⏱ Delivery Horizon: <span class="text-white font-bold">5 to 7 Days</span>
                     </div>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-800 space-y-1 bg-gradient-to-r from-slate-900 to-transparent p-2 rounded-lg">
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-400">Local Tier:</span><span class="text-sm font-extrabold text-white">BDT 3,500 - 8,000</span></div>
-                    <div class="flex justify-between items-baseline"><span class="text-xs text-slate-500">Global Rate:</span><span class="text-xs font-bold text-blue-400">USD 35 - 80</span></div>
+                <div class="pt-4 border-t border-slate-800 space-y-2 font-mono text-xs">
+                    <div class="flex justify-between items-baseline"><span class="text-slate-500">Local Rate:</span><span class="text-sm font-bold text-white">BDT 3,500 - 8,000</span></div>
+                    <div class="flex justify-between items-baseline"><span class="text-slate-600">International:</span><span class="text-xs font-semibold text-blue-400">USD 35 - 80</span></div>
                 </div>
             </div>
         </div>
 
-        <div class="mt-8 bg-gradient-to-r from-[#111827] to-[#172133] text-slate-100 p-6 rounded-2xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div class="max-w-2xl">
-                <span class="text-[9px] font-bold uppercase tracking-widest text-blue-400 block mb-0.5">Strategic Bundling Architecture</span>
-                <p class="text-xs text-slate-400 leading-relaxed">
-                    Maximize clarity from day one. For clients deploying a <span class="text-white font-bold">Brand Launch Website</span>, integrated dashboard telemetry tracking can be seamlessly bundled at a discounted entry threshold, consolidating data monitoring requirements.
+        <div class="mt-8 bg-gradient-to-r from-[#0b101d] to-[#0f1626] p-6 rounded-2xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div class="max-w-3xl space-y-1">
+                <span class="text-[9px] font-bold uppercase tracking-widest text-blue-400 font-mono block">Integrated Revenue Architecture //</span>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    A bundled revenue lever is an integral part of our studio's efficiency structure. For clients deploying a comprehensive <span class="text-white font-bold">Brand Launch Website</span>, analytics dashboard integration can be layered on as an immediate, discounted add-on. This maximizes clear operational metrics from day one while minimizing client acquisition friction.
                 </p>
             </div>
-            <a href="mailto:hello@forma.studio" class="text-xs font-bold text-slate-950 bg-white px-5 py-3 rounded-xl hover:bg-slate-100 transition whitespace-nowrap self-end md:self-auto">
+            <a href="mailto:hello@forma.studio" class="text-xs font-bold text-slate-950 bg-white px-5 py-3 rounded-xl hover:bg-slate-100 transition whitespace-nowrap self-end md:self-auto tracking-tight">
                 Initiate Project Intake
             </a>
         </div>
     </section>
 
-    <section id="blueprint" class="bg-[#070a10] text-white py-20 border-t border-slate-900">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="max-w-2xl mb-12">
-                <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase">Operational Protocol</span>
-                <h2 class="text-3xl font-black tracking-tight mt-1">The Engagement Infrastructure</h2>
-                <p class="text-xs text-slate-400 mt-2">Eliminating project friction through structured execution milestones.</p>
-            </div>
+    <section id="differentiation" class="max-w-7xl mx-auto px-6 py-20 border-b border-slate-900">
+        <div class="max-w-2xl mb-12 space-y-2">
+            <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase font-mono">04 // Core Differentiation</span>
+            <h2 class="text-3xl font-extrabold tracking-tight text-white">The Four Pillars of Strategic Execution</h2>
+            <p class="text-xs text-slate-400">Why human design intent and structured deployment parameters outperform automated templates.</p>
+        </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="space-y-2 border-t border-slate-800 pt-4">
-                    <span class="text-xs font-bold text-blue-500 font-mono">01 / Scope Integrity</span>
-                    <h4 class="font-bold text-sm text-slate-200">Strict Written Scope</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Endless feedback loops stall growth. We completely lock down exact milestone requirements via a structured scope checklist before writing code.</p>
-                </div>
-                <div class="space-y-2 border-t border-slate-800 pt-4">
-                    <span class="text-xs font-bold text-blue-500 font-mono">02 / Automated Efficiency</span>
-                    <h4 class="font-bold text-sm text-slate-200">AI-Accelerated Speed</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">We leverage advanced development utilities internally to accelerate raw structural creation, passing the efficiency savings directly to your project costs.</p>
-                </div>
-                <div class="space-y-2 border-t border-slate-800 pt-4">
-                    <span class="text-xs font-bold text-blue-500 font-mono">03 / Transaction Security</span>
-                    <h4 class="font-bold text-sm text-slate-200">Global Operational Transit</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">International billing processes deploy securely through validated routing frameworks to eliminate processing delays and protect execution timelines.</p>
-                </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-5 bg-[#0b101d] border border-slate-800/70 rounded-xl space-y-3">
+                <div class="text-xs font-mono text-blue-500 font-bold">01 // Context & Judgment</div>
+                <h4 class="text-sm font-bold text-white">Targeted Awareness</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    AI platforms generate layouts without any understanding of your localized market, specific industry verticals, or target audience preferences. We blend design skills with clear strategic logic to ensure every component serves a specific purpose.
+                </p>
+            </div>
+            <div class="p-5 bg-[#0b101d] border border-slate-800/70 rounded-xl space-y-3">
+                <div class="text-xs font-mono text-blue-500 font-bold">02 // Execution Quality</div>
+                <h4 class="text-sm font-bold text-white">Intentional Composition</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Automated templates leave behind distinct visual signatures that signal low investment. Your clients want a reliable, professional relationship, which means your visual identity needs to be crafted with clear, manual precision.
+                </p>
+            </div>
+            <div class="p-5 bg-[#0b101d] border border-slate-800/70 rounded-xl space-y-3">
+                <div class="text-xs font-mono text-blue-500 font-bold">03 // Full Accountability</div>
+                <h4 class="text-sm font-bold text-white">Long-Term Reliability</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    We stand completely behind our deliverables. By offering transparent review processes and regular follow-ups, we provide guidance and security for growing teams developing their brand infrastructure for the first time.
+                </p>
+            </div>
+            <div class="p-5 bg-[#0b101d] border border-slate-800/70 rounded-xl space-y-3">
+                <div class="text-xs font-mono text-blue-500 font-bold">04 // Speed through AI</div>
+                <h4 class="text-sm font-bold text-white">Accelerated Timelines</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    We use advanced AI tools internally to optimize production schedules, not to replace real human skill. This allows us to offer competitive turnaround times without compromising on quality or code architecture.
+                </p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#0b0f19] border-t border-slate-900 text-slate-500 text-center py-12 text-xs">
-        <p class="font-bold text-slate-300 mb-1">Your classmate. Your timeline. Your price.</p>
-        <p class="text-[10px] text-slate-500">&copy; 2026 Forma System Portfolio. Engineered for those building something real.</p>
-    </footer>
+    <section id="profit-loop" class="max-w-7xl mx-auto px-6 py-20 border-b border-slate-900 bg-gradient-to-b from-transparent to-[#070b14]">
+        <div class="max-w-2xl mx-auto text-center mb-16 space-y-2">
+            <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase font-mono">05 // Growth Engine</span>
+            <h2 class="text-3xl font-extrabold tracking-tight text-white">The Compounding Growth Model</h2>
+            <p class="text-xs text-slate-400">Our studio works as a natural referral network loop, where high-quality project delivery continuously acts as passive marketing.</p>
+        </div>
 
-    <script>
-        function triggerSimulationTick() {
-            // Generate standard variance tracking shifts
-            const conversionNode = document.getElementById('sim-conversion');
-            const progressIndicatorNode = document.getElementById('sim-bar');
-            
-            const prospectiveRate = (12.0 + Math.random() * 6.0).toFixed(1);
-            const relativePercentValue = Math.floor(prospectiveRate * 4.5);
-            
-            conversionNode.innerText = `${prospectiveRate}%`;
-            progressIndicatorNode.style.width = `${relativePercentValue}%`;
-            
-            // Apply quick pulse highlight feedback
-            conversionNode.classList.add('text-blue-400');
-            setTimeout(() => conversionNode.classList.remove('text-blue-400'), 400);
-        }
-    </script>
-</body>
-</html>
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-4 font-mono text-center">
+            <div class="p-4 bg-[#0c1222] border border-slate-800 rounded-xl relative">
+                <div class="text-[10px] text-blue-500 font-bold mb-1">STAGE 01</div>
+                <span class="block text-xs font-bold text-white">Deliver Work</span>
+                <span class="absolute hidden md:block top-1/2 -right-2 transform -translate-y-1/2 text-slate-700 text-xs z-10">→</span>
+            </div>
+            <div class="p-4 bg-[#0c1222] border border-slate-800 rounded-xl relative">
+                <div class="text-[10px] text-blue-500 font-bold mb-1">STAGE 02</div>
+                <span class="block text-xs font-bold text-white">Collect Proof</span>
+                <span class="absolute hidden md:block top-1/2 -right-2 transform -translate-y-1/2 text-slate-700 text-xs z-10">→</span>
+            </div>
+            <div class="p-4 bg-[#0c1222] border border-slate-800 rounded-xl relative">
+                <div class="text-[10px] text-blue-500 font-bold mb-1">STAGE 03</div>
+                <span class="block text-xs font-bold text-white">Share Case Study</span>
+                <span class="absolute hidden md:block top-1/2 -right-2 transform -translate-y-1/2 text-slate-700 text-xs z-10">→</span>
+            </div>
+            <div class="p-4 bg-[#0c1222] border border-slate-800 rounded-xl relative">
+                <div class="text-[10px] text-blue-500 font-bold mb-1">STAGE 04</div>
+                <span class="block text-xs font-bold text-white">Get Referral</span>
+                <span class="absolute hidden md:block top-1/2 -right-2 transform -translate-y-1/2 text-slate-700 text-xs z-10">→</span>
+            </div>
+            <div class="p-4 bg-[#0c1222] border border-slate-800 rounded-xl relative">
+                <div class="text-[10px] text-blue-500 font-bold mb-1">STAGE 05</div>
+                <span class="block text-xs font-bold text-white">Next Client</span>
+                <span class="absolute hidden md:block top-1/2 -right-2 transform -translate-y-1/2 text-slate-700 text-xs z-10">→</span>
+            </div>
+            <div class="p-4 bg-blue-600 rounded-xl border border-blue-500">
+                <div class="text-[10px] text-white/70 font-bold mb-1">STAGE 06</div>
+                <span class="block text-xs font-black text-white">Higher Rate</span>
+            </div>
+        </div>
+
+        <div class="mt-10 max-w-3xl mx-auto bg-[#0b101d] border border-slate-800/80 rounded-xl p-5 text-center text-xs text-slate-400 leading-relaxed">
+            Satisfied clients refer others, which lowers customer acquisition costs and builds portfolio value over time. As our referral network deepens, the studio shifts smoothly from outbound outreach to steady inbound demand, naturally strengthening pricing flexibility alongside brand credibility.
+        </div>
+    </section>
+
+    <section id="mitigation" class="max-w-7xl mx-auto px-6 py-20 border-b border-slate-900">
+        <div class="max-w-2xl mb-12 space-y-2">
+            <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase font-mono">06 // Operational Risk Engineering</span>
+            <h2 class="text-3xl font-extrabold tracking-tight text-white">Risk Mitigation Architecture</h2>
+            <p class="text-xs text-slate-400">How our operational process manages potential project challenges to ensure smooth delivery timelines.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 font-sans">
+            <div class="p-6 bg-[#0b101d] border border-slate-800/80 rounded-2xl flex gap-4 items-start">
+                <div class="bg-red-500/10 text-red-400 px-2.5 py-1 rounded text-xs font-mono font-bold">01</div>
+                <div class="space-y-1.5">
+                    <h4 class="text-sm font-bold text-white">Managing Scope Creep</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Open-ended project descriptions can easily lead to endless feedback loops and delays. We manage this risk by defining a formal, written scope checklist before any design or engineering work begins.
+                    </p>
+                </div>
+            </div>
+            <div class="p-6 bg-[#0b101d] border border-slate-800/80 rounded-2xl flex gap-4 items-start">
+                <div class="bg-red-500/10 text-red-400 px-2.5 py-1 rounded text-xs font-mono font-bold">02</div>
+                <div class="space-y-1.5">
+                    <h4 class="text-sm font-bold text-white">Building Portfolio Momentum</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        To address an early-stage lack of published case studies, our process prioritizes reaching out to warm contacts and delivering exceptional quality on initial projects to spark steady client referrals.
